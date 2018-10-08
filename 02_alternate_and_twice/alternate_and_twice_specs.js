@@ -1,3 +1,6 @@
+/* eslint-env jasmine */
+/* eslint-disable no-undef */
+
 describe('alternate', () => {
   let message;
   beforeEach(() => {

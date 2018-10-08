@@ -1,3 +1,6 @@
+/* eslint-env jasmine */
+/* eslint-disable no-undef */
+
 describe('interleave', () => {
   it('is a function', () => {
     expect(typeof interleave).toBe('function');
