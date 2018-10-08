@@ -19,7 +19,7 @@ This checkpoint is similar to the Test First exercises — reverse engineer each
 
 ### Scoring
 
-This checkpoint is scored out of **45 points**. In each suite, the later specs are usually more challenging / valuable. The suites are weighted as follows:
+This checkpoint is scored out of **44 points**. In each suite, the later specs are usually more challenging / valuable. The suites are weighted as follows:
 
 - 00_string_manipulation - 3.00 Points
 - 01_reduce_right - 6.00 Points (the recursion spec is worth 4.00 out of the 6.00)
@@ -31,7 +31,7 @@ This checkpoint is scored out of **45 points**. In each suite, the later specs a
 
 ### Tips
 
-* Each folder has a README.md file; **read the README files** to get an overview of each Test Spec and Point Value, as well as problem concept.
+* Each folder has a README.md file; **read the README files** to get an overview of each Test Spec and Point Value.
 * You are encouraged to `git commit` at regular milestones.
 
 ---
