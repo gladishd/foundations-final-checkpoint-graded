@@ -1,6 +1,6 @@
 # Vowel Count
 
-### Total Points: 2.00
+### Total Points: 3.00
 
 Create a JavaScript function called vowelsCount(str). The str aka string parameter being passed should return the number of vowels the string contains. Do not count y as a vowel for this challenge.
 

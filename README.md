@@ -21,12 +21,12 @@ This checkpoint is similar to the Test First exercises — reverse engineer each
 
 This checkpoint is scored out of **45 points**. In each suite, the later specs are usually more challenging / valuable. The suites are weighted as follows:
 
-- 00_string_manipulation - 2.00 Points
+- 00_string_manipulation - 3.00 Points
 - 01_reduce_right - 6.00 Points (the recursion spec is worth 4.00 out of the 6.00)
 - 02_alternate_function_&_twice_function - 8.00 Points 
 - 03_create_functions - 9.00 Points
 - 04_keyAdder - 6.00 Points
-- 05_macbooks - 6.00 Points (last spec is extra credit and worth 2 Points)
+- 05_macbooks - 4.00 Points 
 - 06_interleave - 8.00 Points
 
 ### Tips

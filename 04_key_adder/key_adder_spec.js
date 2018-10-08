@@ -1,3 +1,6 @@
+/* eslint-env jasmine */
+/* eslint-disable no-undef */
+
 describe('keyAdder', () => {
   it('keyAdder is a function', () => {
     expect(typeof keyAdder === 'function').toEqual(true);

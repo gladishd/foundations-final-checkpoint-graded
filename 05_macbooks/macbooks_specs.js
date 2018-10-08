@@ -1,3 +1,8 @@
+/* eslint-env jasmine */
+/* eslint-disable no-undef */
+
+// Note: The ES2015 Class Keyword should be used.
+
 describe('Laptop class', () => {
   let omrisLaptop;
 
@@ -20,11 +25,10 @@ describe('Laptop class', () => {
   });
 });
 
-describe('Macbook class', () => {
+describe('Macbook class extends from Laptop', () => {
   let zekesMacbook;
 
   beforeEach(() => {
-    spyOn(Laptop, 'apply').and.callThrough();
     zekesMacbook = new Macbook(2010, 1000, 'gold');
   });
 
@@ -36,78 +40,16 @@ describe('Macbook class', () => {
     expect(zekesMacbook.year).toBe(2010);
     expect(zekesMacbook.hd).toBe(1000);
     expect(zekesMacbook.color).toBe('gold');
-  });  
-});
-
-describe('extendWithObjectCreate', () => {
-  beforeEach(() => {
-    spyOn(Object, 'create').and.callThrough();
-
-    // extendWithObjectCreate invocation, the arguments passed are the constructor functions
-    // created earlier in these specs.
-
-    extendWithObjectCreate(Macbook, Laptop);
   });
 
-  it('assigns the internal prototype (__proto__) of the first parameter\'s ".prototype" property to reference the second parameter\'s ".prototype" property', () => {
-    expect(typeof Macbook).toBe('function');
-    expect(typeof Laptop).toBe('function');
-
-    // feel free to check out the docs on `Object.getPrototypeOf`: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf
-    expect(Object.getPrototypeOf(Macbook.prototype)).toEqual(Laptop.prototype);
+  it('extends the Laptop Class and should have the Macbook.prototype and Laptop.prototype objects in its prototype chain', () => {
+    expect(zekesMacbook instanceof Laptop).toBe(true);
+    expect(zekesMacbook instanceof Macbook).toBe(true);
   });
 
-  it("calls `Object.create` to create a new object and sets the new object's internal prototype (__proto__)", () => {
-    expect(Object.create).toHaveBeenCalled();
-  });
-
-  it('can invoke the `checkSpecs` function from the `Laptop.prototype` object', () => {
-    const myMacbook = new Macbook(2200, 2000);
-    expect(myMacbook.checkSpecs()).toBe('Year: 2200, HD: 2000');
-    expect(myMacbook.hasOwnProperty('checkSpecs')).toBe(false);
-  });
-
-  it("does not run the parent's constructor function during extension", () => {
-    // Parent represents a constructor function
-    const Parent = jasmine.createSpy();
-    const Child = function() {};
-    extendWithObjectCreate(Child, Parent);
-    expect(Parent).not.toHaveBeenCalled();
+  it('has access to the checkSpecs function located on the Laptop Class', () => {
+    expect(zekesMacbook.checkSpecs()).toBe('Year: 2010, HD: 1000');
   });
 });
 
-// EXTRA CREDIT - 2 Points
 
-describe('extendWithNewKeyword', () => {
-  beforeEach(() => {
-    spyOn(Object, 'create').and.callThrough();
-    // extendWithNewKeyword invocation, notice the arguments being passed
-    extendWithNewKeyword(Macbook, Laptop);
-  });
-
-  it('assigns the internal prototype of the first parameter\'s ".prototype" property to reference the second parameter\'s ".prototype" property', () => {
-    expect(typeof Macbook).toBe('function');
-    expect(typeof Laptop).toBe('function');
-
-    expect(Object.getPrototypeOf(Macbook.prototype)).toEqual(Laptop.prototype);
-  });
-
-  it("does not use `Object.create` to create a new object and set the new object's internal prototype", () => {
-    // instead of `Object.create`
-    expect(Object.create).not.toHaveBeenCalled();
-  });
-
-  it('can invoke the `checkSpecs` function from the `Laptop.prototype` object', () => {
-    const myMacbook = new Macbook(2050, 300);
-    expect(myMacbook.checkSpecs()).toBe('Year: 2050, HD: 300');
-    expect(myMacbook.hasOwnProperty('checkSpecs')).toBe(false);
-  });
-
-  it("runs the parent's constructor function during extension", () => {
-    // Parent represents a Constructor Function
-    const Parent = jasmine.createSpy();
-    const Child = function() {};
-    extendWithNewKeyword(Child, Parent);
-    expect(Parent).toHaveBeenCalled();
-  });
-});

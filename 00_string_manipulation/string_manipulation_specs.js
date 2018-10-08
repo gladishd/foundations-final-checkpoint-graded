@@ -1,3 +1,6 @@
+/* eslint-env jasmine */
+/* eslint-disable no-undef */
+
 describe('vowelsCount', () => {
   it('should handle an empty String', () => {
     expect(vowelsCount('')).toBe(0);
