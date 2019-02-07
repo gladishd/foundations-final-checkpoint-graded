@@ -1,7 +1,5 @@
-# Reduce Right
+### Reduce Right
 
-## Total Points: 6.00
+#### Total Points: 3.00
 
-## Description
-
-Create a function called reduceRight that accepts an array, a starting value and an iterating function.  Instead of iterating over the array from left to right, have the reduceRight function start from the last element in the array.
+Create a function called `reduceRight` that accepts an array, a starting value and an iterating function. **Instead of iterating over the array from left to right**, the `reduceRight` function iterates from right to left. (it starts from the last element in the array (at the end of the array) and stops at the first element in the array argument)
