@@ -14,7 +14,8 @@
     "url": "https://github.com/FullstackAcademy/foundations-final-checkpoint-V2/issues"
   },
   "homepage": "https://github.com/FullstackAcademy/foundations-final-checkpoint-V2#readme",
-  "dependencies": {
-    "testem": "^2.9.2"
+  "dependencies": {},
+  "devDependencies": {
+    "testem": "^2.14.0"
   }
 }
