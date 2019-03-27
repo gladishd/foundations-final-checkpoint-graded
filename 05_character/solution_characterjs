@@ -1,0 +1,40 @@
+/* eslint-disable no-unused-vars */
+
+class Character {
+  constructor(char, font, size) {
+    this.character = char;
+    this.fontName = font;
+    this.fontSize = size;
+  }
+
+  drawCharacter() {
+    return this.character;
+  }
+}
+
+class Letter extends Character {
+  constructor(char, font, size, charCase) {
+    super(char, font, size);
+    this.charCase = charCase;
+  }
+  toLowerCase() {
+    this.charCase = 'lowerCase';
+    this.character = this.character.toLowerCase();
+  }
+  toUpperCase() {
+    this.charCase = 'upperCase';
+    this.character = this.character.toUpperCase();
+  }
+  getCase() {
+    return this.charCase;
+  }
+}
+
+class Digit extends Character {
+  constructor(char, font, size) {
+    super(char, font, size);
+  }
+  integerValue() {
+    this.character = parseInt(this.character, 10);
+  }
+}

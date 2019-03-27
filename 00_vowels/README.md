@@ -1,6 +1,10 @@
 ### Vowel Count
 
-#### 4.00 Points
+#### Points: 4.00
+
+<hr>
+
+### Description:
 
 Create a function called `vowelsCount(str)` that detects the amount of vowels in a string and **returns an object with the format:** `{a: 0, e: 0, i: 0, o: 0, u: 0, total: 0}`. The object returned contains property/value pairs that correspond to the vowel (property) and the amount of occurrences of the vowel in the `str` argument. In addition, it has a property called `total` that contains the sum of all of the vowels included in the `str` argument.
 

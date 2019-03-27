@@ -1,6 +1,10 @@
 ### A Quarter Function
 
-#### 7.00 Points
+#### Points: 7.00
+
+<hr>
+
+#### Description
 
 The `aQuarter` function accepts a function as an argument and returns a new function.
 

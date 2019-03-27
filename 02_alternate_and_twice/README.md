@@ -1,8 +1,10 @@
-# Alternate & Twice Function
+### Alternate & Twice Function
 
-## Total Points: 8.00
+#### Points: 8.00
 
-## Description:
+<hr>
+
+#### Description:
 
 Create the functions `alternate` and `twice`.
 
