@@ -57,8 +57,8 @@ The `Digit` class is an extension of the `Character` class. Every `Digit` instan
 
 **Methods:**
 
-- `integerValue` - the integerValue method will convert a string assigned to the `character` property if it is a digit string to a number data type.
-  - **HINT**: There are various approaches to conver the string '1' to the number 1. The [parseInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) function is a great option!
+- `integerValue` - the `integerValue` method converts a numeric string character (located at the `.character` property) to a number data type.
+  - **HINT**: There are various approaches to convert the string '1' to the number 1. The [parseInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) function is a great option!
 
 ```js
 const one = new Digit('1', 'Arial', 29);
