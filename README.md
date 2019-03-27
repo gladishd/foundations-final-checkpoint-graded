@@ -61,7 +61,7 @@ The total amount of points for each problem are listed below. Keep in mind, each
 
 - 00_vowels - 4.00 Points
 - 01_reduce_right - 3.00 Points
-- 02*alternate_function*&\_twice_function - 8.00 Points
+- 02alternate_function&\_twice_function - 8.00 Points
 - 03_a-quarter - 7.00 Points
 - 04_keyAdder - 6.00 Points
 - 05_character - 4.00 Points
