@@ -59,13 +59,13 @@ http://localhost:7357/
 
 The total amount of points for each problem are listed below. Keep in mind, each test spec has a different "weight" or amount of points it is worth. In addition, you can receive partial credit even if your code isn't passing!
 
-- 00_vowels - 4.00 Points
-- 01_reduce_right - 3.00 Points
-- 02_alternate_function&\_twice_function - 8.00 Points
-- 03_a-quarter - 7.00 Points
-- 04_keyAdder - 6.00 Points
-- 05_character - 4.00 Points
-- 06_interleave - 8.00 Points
+- 00 Reduce Right - 3.00 Points
+- 01 Complement - 5.00 Points
+- 02 Alternate & Twice - 8.00 Points
+- 03 Vending Machine - 5.00 Points
+- 04 A Quarter - 7.00 Points
+- 05 Key Adder - 6.00 Points
+- 06 Character - 4.00 Points
 
 <hr>
 <br>

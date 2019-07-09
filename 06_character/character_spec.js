@@ -104,6 +104,7 @@ describe('Digit Class', () => {
     expect(one.character).toBe(1);
     expect(one.fontName).toBe('Helvetica');
     expect(one.fontSize).toBe(16);
+    expect(one.isDigit).toBe(true);
 
     expect(one.drawCharacter()).toBe(1);
     expect(one.hasOwnProperty('drawCharacter')).toBe(false);
@@ -114,10 +115,9 @@ describe('Digit Class', () => {
 
   it('Digit has a custom `integerValue` method that converts a numeric string character to a number data type', () => {
     /*
-      There are various approaches to convert the string '1' to the number 1. 
+      There are various approaches to convert the string '1' to the number 1.
       The [parseInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) function is a great option!
     */
-    
     const two = new Digit('2', 'Arial', 10);
     const beforeIntegerValueInvocation = two.drawCharacter();
 
