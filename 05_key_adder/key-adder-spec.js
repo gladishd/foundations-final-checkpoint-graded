@@ -16,7 +16,7 @@ describe('keyAdder', () => {
     const total = keyAdder.call({ a1: 4, a2: 5, a3: 6 });
 
     expect(typeof total === 'number').toBe(true);
-    expect(typeof myObj['a0']() === 'number').toBe(true);
+    expect(typeof myObj.a0() === 'number').toBe(true);
   });
 
   it('adds all the keys with number values and returns their sum', () => {
@@ -32,14 +32,14 @@ describe('keyAdder', () => {
 
   it("skips properties of the object's prototype", () => {
     const NumberObj = function() {
-      this['a0'] = 0;
-      this['a5'] = 5;
-      this['a10'] = 10;
-      this['a15'] = 15;
+      this.a0 = 0;
+      this.a5 = 5;
+      this.a10 = 10;
+      this.a15 = 15;
     };
 
-    NumberObj.prototype['a20'] = 20;
-    NumberObj.prototype['a25'] = 25;
+    NumberObj.prototype.a20 = 20;
+    NumberObj.prototype.a25 = 25;
 
     const objectWithNumberVals = new NumberObj();
 
