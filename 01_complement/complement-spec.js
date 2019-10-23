@@ -71,7 +71,7 @@ describe('array removal utility', () => {
       spyOn(window, 'complement').and.callThrough();
       remove(inputArr, greaterThanTen);
       remove(inputArr, isNegative);
-      expect(complement.calls.count()).toEqual(2);
+      expect(complement.calls.count()).not.toBeLessThan(2);
     });
 
     // use Array.prototype.forEach instead of a for loop.
