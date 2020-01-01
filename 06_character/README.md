@@ -36,17 +36,17 @@ The `Letter` class is an extension of the `Character` class. Every `Letter` inst
 **Methods:**
 
 - `getCase` - the `getCase` method returns the value assigned to the `charCase` property
-- `lowerCase` - the method re-assigns the value assigned to the `charCase` property to `lowerCase`. In addition, it calls the String.prototype.toLowerCase() method on the `character` property and re-assigns the value returned to the character property.
-- `upperCase` - the method re-assigns the value assigned to the `charCase` property to `upperCase`. In addition, it calls the String.prototype.toUpperCase() method on the `character` property and re-assigns the value returned to the character property.
+- `toLowerCase` - the method re-assigns the value assigned to the `charCase` property to `lowerCase`. In addition, it calls the String.prototype.toLowerCase() method on the `character` property and re-assigns the value returned to the character property.
+- `toUpperCase` - the method re-assigns the value assigned to the `charCase` property to `upperCase`. In addition, it calls the String.prototype.toUpperCase() method on the `character` property and re-assigns the value returned to the character property.
 
 ```js
 const c = new Letter('c', 'Helvetica', 16, 'lowerCase');
 c.drawCharacter(); // returns 'c';
 c.getCase(); // returns 'lowerCase'
-c.upperCase();
+c.toUpperCase();
 c.getCase(); // returns 'upperCase'
 c.drawCharacter(); // returns 'C';
-c.lowerCase();
+c.toLowerCase();
 c.getCase(); // returns 'lowerCase'
 c.drawCharacter(); // returns 'c';
 ```
