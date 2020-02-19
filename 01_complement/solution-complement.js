@@ -5,7 +5,7 @@
   NOTE:
 
   the complement function needs to be defined with a function declaration to pass the test specs
-  do not refactor the function declearation.
+  do not refactor the function declaration.
   
   The complement function may need parameters in its definition.... read the test specs! :)
 
