@@ -7,7 +7,7 @@
 ### Description:
 
 
-**complement** - Create the function `complement` that takes a function as an argument.  Complement **returns a function** that itself returns the logical opposite of the function passed in as an argument.
+**complement** - Create the function `complement` that  **returns a function** that itself returns the logical opposite of the function passed in as an argument.
 
 ```js
 function returnTrue() {
@@ -16,6 +16,17 @@ function returnTrue() {
 
 const returnFalse = complement(returnTrue);
 returnFalse() // RETURN VALUE: false; // complement returned a function that returns the logical opposite of the function passed to complement.
+```
+
+```js
+function greaterThanFive(num) {
+  return num > 5;
+}
+
+const lessThanFive = complement(greaterThanFive);
+lessThanFive(10); // RETURN VALUE: false 
+
+// greaterThanFive would have returned true, however  since greaterThanFive was passed into complement, the function returned from complement returns the logical opposite of greaterThanFive.
 ```
 
 **remove** - Create the function `remove` that accepts an array and function argument.  
@@ -41,7 +52,6 @@ function isVowel(letter) {
 
 const arrayOfConsonants = remove(['l', 'k', 'e', 'o', 'm', 's', 'o', 'a', 'c'], isVowel);
 // arrayOfConsonants = ['l', 'k', 'm', 's', 'c'] // all the consonants were returned since they are the logical opposite of the isVowel function.
-
 
 
 ```
