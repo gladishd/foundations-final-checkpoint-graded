@@ -52,8 +52,12 @@ functionReturned(7, 2); // ==> returns 5
 
 EXTRA CREDIT: Adding the functionality described below is extra credit
 
-The function returned from `aQuater` should be able to pass any number of arguments to the function it invokes (the function it invokes is the function passed to aQuarter), there is a variable
-function declarations have access to that is very useful for this situation.
+The function returned from `aQuater` should be able to accept any number of arguments to the function it invokes (the function it invokes is the function passed to aQuarter).
+
+These links might be helpful:
+
+- [Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+- [Arguments Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
 
 ```js
 const functionReturned = aQuarter(

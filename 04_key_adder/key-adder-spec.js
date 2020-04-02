@@ -13,7 +13,7 @@ describe('keyAdder', () => {
 
   it("is designed to be called within an object's context, do not create conditions if called in the global space", () => {
     const myObj = { a0: keyAdder, a1: 1, a2: 2 };
-    const total = keyAdder.call({ a1: 4, a2: 5, a3: 6 });
+    const total = keyAdder.call({ a1: 4, a2: 5, a3: 6 }); // Note: keyAdder is invoked with `.call`
 
     expect(typeof total === 'number').toBe(true);
     expect(typeof myObj.a0() === 'number').toBe(true);

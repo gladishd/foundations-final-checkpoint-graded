@@ -113,20 +113,30 @@ describe('Digit Class', () => {
     expect(one instanceof Character).toBe(true);
   });
 
-  it('Digit has a custom `integerValue` method that converts a numeric string character to a number data type', () => {
+  it('if a numeric string character is the first argument, the isDigit property is set to false', () => {
+    const three = new Digit('3', 'Georgia', 12);
+    expect(three.isDigit).toBe(false);
+  });
+
+  it('Digit has a custom `integerValue` method that converts a numeric string character to a number data type and updates the isDigit property to true or false (this depends if the character is a numeric string or a number)', () => {
     /*
       There are various approaches to convert the string '1' to the number 1.
       The [parseInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) function is a great option!
     */
     const two = new Digit('2', 'Arial', 10);
     const beforeIntegerValueInvocation = two.drawCharacter();
-
+    const isDigitBeforeIntegerValueInvocation = two.isDigit;
+    
+    expect(isDigitBeforeIntegerValueInvocation).toBe(false);
     expect(beforeIntegerValueInvocation).toBe('2');
     expect(typeof beforeIntegerValueInvocation).toBe('string');
 
     two.integerValue();
 
+    expect(two.isDigit).toBe(true);
     expect(two.drawCharacter()).toBe(2);
     expect(typeof two.drawCharacter()).toBe('number');
   });
+
+  // it('the ingegerValue method does not change ')
 });

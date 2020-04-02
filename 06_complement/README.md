@@ -29,6 +29,11 @@ lessThanFive(10); // RETURN VALUE: false
 // greaterThanFive would have returned true, however  since greaterThanFive was passed into complement, the function returned from complement returns the logical opposite of greaterThanFive.
 ```
 
+**Tip:** Pay close attention to the arguments that need to be passed to the function passed into complement.
+
+<hr>
+<br>
+
 **remove** - Create the function `remove` that accepts an array and function argument.  
 
 The `remove` function removes every element from the array that is the logical opposite of the function argument's return value. In the example below, the `greaterThanTen` function returns all numbers great than 10. The array returned from `remove` returns all numbers less than or equal to ten becuase the `remove` function returns the logial opposite of the function passed to `remove`.

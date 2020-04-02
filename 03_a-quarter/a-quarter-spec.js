@@ -41,7 +41,7 @@ describe('aQuarter function', () => {
   // the specs below related to handling an unlimited amount of arguments is extra credit and is worth 2 additional points. The problem as a whole is not extra credit
   // only the test-spec below.
 
-  it('the function returned from aQuarter can pass multiple arguments to the function it invokes (the function passed to aQuarter)', () => {
+  it('EXTRA-CREDIT: the function returned from aQuarter can pass multiple arguments to the function it invokes (the function passed to aQuarter)', () => {
     const concatenate = (strA, strB, strC, strD, strE, strF) => {
       return `${strA} ${strB} ${strC} ${strD} ${strE} ${strF}`;
     };
