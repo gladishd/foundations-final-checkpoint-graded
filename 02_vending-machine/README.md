@@ -16,26 +16,23 @@ The Vending Machine (VM) class also contains the following class methods:
 
 For Example:
 
-```
+```js
 const snacksVendingMachine = VM({
    1: { name: 'Pringles', stock: 0 },
    2: { name: 'M&Ms', stock: 0 },
-   3: { name: 'KitKat', stock: 0 },
+   3: { name: 'KitKat', stock: 0 }
 })
 
 console.log(snacksVendingMachine.inventory);
 
-/*
 
-The statement above logs:
+// The statement above logs:
 
 {
   1: { name: 'Pringles', stock: 0 },
   2: { name: 'M&Ms', stock: 0 },
-  3: { name: 'KitKat', stock: 0 },
+  3: { name: 'KitKat', stock: 0 }
 }
-
-*/
 
 ```
 
