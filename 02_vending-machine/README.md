@@ -24,7 +24,9 @@ const snacksVendingMachine = VM({
 })
 
 console.log(snacksVendingMachine.inventory);
+
 /*
+
 The statement above logs:
 
 {
