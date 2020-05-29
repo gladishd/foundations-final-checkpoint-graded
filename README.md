@@ -2,17 +2,7 @@
 
 ### Getting Started:
 
-1. **Clone** the Checkpoint and `cd` (change directories) so you are in the Checkpoint's directory in your terminal.
-
-2. Before solving a problem, read the `README.md` file located in the problem's directory (folder). The `README.md` file provides a general overview of the problem and will give you additional context when reading the Test Specs.
-
-3. Write your solution code in the `solution-${problem-name}.js` file.
-
-4. Run the test specs to test your code. Prior to starting the checkpoint, it was instructed that you are are responsible for your development environment. Follow the instructions below to run the test specs:
-
-### Getting Started:
-
-1. **Clone** the Checkpoint and `cd` (change directories) so you are in the Checkpoint's directory in your terminal.
+1. **Clone** the Checkpoint and `cd` (change directories) so you are in the checkpoint directory in your terminal.
 
 2. Before solving a problem, read the `README.md` file located in the problem's directory (folder). The `README.md` file provides a general overview of the problem and will give you additional context when reading the Test Specs.
 
@@ -20,34 +10,28 @@
 
 4. Run the test specs to test your code. Prior to starting the checkpoint, it was instructed that you are are responsible for your development environment. Follow the instructions below to run the test specs:
 
-#### NPM Install and NPM Test
+#### NPX testem
 
-1. Run the command:
-
-```sh
-$ npm install
-```
-
-Note: the command **needs to be executed inside of the foundations-final-checkpoint directory**.
-
-2. After the installation is complete, when you want to run `testem` run the command:
+1. Run the command below to run your test specs:
 
 ```sh
-npm test
+$ npx testem
 ```
 
-3. Here are all of the steps:
+Note: the command **needs to be executed inside of the foundations-checkpoint-pt-2 directory**.
+
+2. Here are all of the steps:
 
 ```sh
 $ cd ${name-of-the-checkpoint-repository}
-$ npm install
-$ npm test
+$ npx testem
 TEST'EM 'SCRIPTS!
 Open the URL below in a browser to connect.
 http://localhost:7357/
 ```
 
 <hr>
+
 
 
 ### Point Distribution Overview:
@@ -60,7 +44,6 @@ The total amount of points for each problem are listed below. Keep in mind, each
 - 03 A Quarter - 7.00 Points
 - 04 Key Adder - 6.00 Points
 - 05 Character - 4.00 Points
-- 06 Complement - 5.00 Points
 
 <hr>
 <br>
