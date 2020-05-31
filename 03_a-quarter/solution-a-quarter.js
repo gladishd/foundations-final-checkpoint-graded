@@ -4,7 +4,7 @@ const aQuarter = (fn) => {
     return function(...args) {
         count++;
         if (count % 4 === 0) {
-            return fn(args);
+            return fn(...args);
         }
         return 'something went wrong :/';
     }
