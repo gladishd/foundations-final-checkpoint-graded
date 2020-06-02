@@ -37,18 +37,24 @@ class Digit extends Character{
         this.character = eval(this.character);
     }
 }
-/* Classes are quite excellent functions because 
- * they allow objects to inherit characteristics 
- * such as specific methods via the prototype chain which 
- * modify properties using the `this` keyword.  
- * In this problem, I've implemented 
- * three classes, and two of which inherit the 
- * character, font name, and font size from the 
- * Character() class.  So, in the last sub-class 
- * Digit, I just wrote ...args instead of spelling out 
- * each individual argument; is this recommended form, or 
- * should I write them out individually?  
- * Anyway, thanks Justin for being such a good mentor, 
+/* Classes are quite excellent functions because
+ * they allow objects to inherit characteristics
+ * such as specific methods via the prototype chain which
+ * modify properties using the `this` keyword.
+ * In this problem, I've implemented
+ * three classes, and two of which inherit the
+ * character, font name, and font size from the
+ * Character() class.  So, in the last sub-class
+ * Digit, I just wrote ...args instead of spelling out
+ * each individual argument; is this recommended form, or
+ * should I write them out individually?
+ * Anyway, thanks Justin for being such a good mentor,
  * I am glad to have you as a mentor and believe that these
- * exercises have illuminated a lot of my questions which I 
+ * exercises have illuminated a lot of my questions which I
  * have about syntax and stuff. */
+
+ /* Whether you use ...args or enumerate them is completely up to you.
+  * I would just consider what type of self-documenting code you would like to write.
+  * ...args self-documents by saying "There is nothing unique passed to Digit that won't get passed along to Character".
+  * Enumerating all of the arguments self-documents by giving human names to each argument so that you know exactly what is passed into Digit.
+  * The choice is up to you. */
